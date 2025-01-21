@@ -6,13 +6,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-}
-
-main {
-    flex: 1;
-}
-
-body {
+    
     background-color: #1e1e1e; /* Couleur de fond par défaut de VS Code */
     color: #ffffff; /* Couleur du texte pour un bon contraste */
     font-family: Arial, sans-serif;
@@ -20,20 +14,90 @@ body {
     padding: 0;
 }
 
-header, footer {
-    background-color: #252526; /* Couleur légèrement différente pour le header et le footer */
+main {
+    flex: 1;
+}
+
+header, footer, nav {
+    background-color: #252526; 
+    /* Couleur légèrement différente pour le header et le footer */
     padding: 1em;
     text-align: center;
 }
 
-header h1{
-    text-align: left;
-    margin-left: 1em;    
+header {
+    display: flex;
+    flex-direction: line;
+    align-items: center;
+    background-color: #ff0000; 
+    /* Couleur légèrement différente pour le header et le footer */
+    padding: 0em;
+    text-align: center;
 }
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0em;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    padding: 0.5em;
+    background-color: #505050;
+    align-items: center;
+    /* display: flex; */
+    /* width: 100%; */
+    /* margin: 0; */
+    /* z-index: 1000;  */
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+#side-menu {
+    display: none;
+}
+
+.nav-images {
+    display: flex;
+    align-items: center;
+}
+
+.nav-images a {
+    margin-right: 0.7em;
+}
+
+
+h1{
+    text-align: left;
+    margin: 0;    
+}
+
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex: 1;
 }
 
 nav ul li {
@@ -48,4 +112,16 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 1em;
+}
+
+#redirect-menu-icon, #lottie-logo {
+    width: 30px;
+    height: 30px;
+    /* margin-right: 0.7em; */
 }
