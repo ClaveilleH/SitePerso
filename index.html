@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Site Web</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
 </head>
 <body>
@@ -13,19 +14,20 @@
             <a href="#navbar">
                 <img id="logo" src="logo.png" alt="Logo de mon site web">
             </a>
-            <!-- <img id="logo" src="logo.png" alt="Logo de mon site web"> -->
             <h1>Hugo CLAVEILLE</h1>
-            <!-- <button id="login-button">Connexion</button> -->
         </div>
     </header>
     <nav id="navbar">
         <div class="nav-content">
-            <div id="lottie-logo" ></div>
-            <div id="side-menu">
+            <a>
+                <!-- <img id="logo" src="logo.png" alt="Logo de mon site web"> -->
+                <div id="lottie-logo" ></div>
+            </a>
+            <!-- <div id="side-menu">
                 <div id="side-menu-bar"></div>
                 <div id="side-menu-bar"></div>
                 <div id="side-menu-bar"></div>
-            </div>
+            </div> -->
             <ul class="nav-list">
                 <li><a href="#home">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
@@ -67,6 +69,11 @@
             </div>
         </div>
     </nav>
+    <div id="sidebar" class="sidebar">
+        <a href="#home">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+    </div>
     <main>
         <section id="home">
             <h2>Accueil</h2>

@@ -18,7 +18,7 @@ main {
     flex: 1;
 }
 
-header, footer, nav {
+header, footer{
     background-color: #252526; 
     /* Couleur légèrement différente pour le header et le footer */
     padding: 1em;
@@ -124,4 +124,40 @@ nav ul li a:hover {
     width: 30px;
     height: 30px;
     /* margin-right: 0.7em; */
+}
+
+.sidebar {
+    height: 100%; 
+    position: sticky;
+    top: 50px; /* Positionner la sidebar sous le header */
+    /* height: calc(100% - 100px);  */
+    /* Ajuster la hauteur pour exclure la hauteur du header */
+    width: 50px;
+    background-color: #111;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    /* overflow-x: hidden; */
+    transition: 0.5s;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
