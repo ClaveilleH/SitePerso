@@ -108,19 +108,43 @@ nav ul li a:hover {
 #redirect-menu-icon, #lottie-logo {
     width: 30px;
     height: 30px;
+    /* margin-right: 0.7em; */
 }
 
 #sidebar {
     position: sticky;
-    top: 50px;
-    height: 100vh;
+    top: 50px; 
+    z-index: 1;
+    height:   100vh; 
+    /* height: calc(100vh - 100px); marche pas c'est nul */
+
+    /* flex: 1; */
     width: 50px;
     transition: 0.5s;
     overflow-x: hidden;
-
+    
+    
+    /*Positionner la sidebar sous le header */
+    /* height: calc(100% - 100px);  */
+    /* Ajuster la hauteur pour exclure la hauteur du header */
     background-color: #111;
     background-color: #505050;
+    /* z-index: 1; */
+    /* left: 0; */
+    /* bottom: 0; */
     
+
+    /* height: 100%; 
+    width: 250px;
+    position: sticky;
+    top: 0; 
+    background-color: #00ff40;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s; 
+    padding-top: 60px; 
+    border: 3px solid #ff00b3; */
+
 }
 
 #sidebar a {
@@ -139,7 +163,6 @@ nav ul li a:hover {
 
 main {
     padding-left: 1em;
-    /* flex: 1; */
 }
 
 .container {

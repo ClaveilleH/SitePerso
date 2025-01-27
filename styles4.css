@@ -4,12 +4,11 @@ html, body {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     background-color: #1e1e1e; /* Couleur de fond par défaut de VS Code */
     color: #ffffff; /* Couleur du texte pour un bon contraste */
     font-family: Arial, sans-serif;
 }
+
 
 header, footer{
     background-color: #252526; 
@@ -21,7 +20,9 @@ header {
     display: flex;
     flex-direction: line;
     align-items: center;
+    /* Couleur légèrement différente pour le header et le footer */
     padding: 0em;
+    text-align: center;
 }
 
 .header-content {
@@ -31,17 +32,6 @@ header {
     margin-bottom: 0em;
 }
 
-nav {
-    position: sticky;
-    top: 0px;
-    padding: 0.5em;
-    background-color: #505050;
-    align-items: center;
-    /* display: flex; */
-    /* width: 100%; */
-    /* margin: 0; */
-    /* z-index: 1000;  */
-}
 
 .nav-content {
     display: flex;
@@ -69,12 +59,10 @@ nav {
     margin-right: 0.7em;
 }
 
-
 h1{
     text-align: left;
     margin: 0;    
 }
-
 
 nav ul {
     list-style-type: none;
@@ -108,16 +96,16 @@ nav ul li a:hover {
 #redirect-menu-icon, #lottie-logo {
     width: 30px;
     height: 30px;
+    /* margin-right: 0.7em; */
 }
 
 #sidebar {
     position: sticky;
-    top: 50px;
-    height: 100vh;
+    top: 50px; 
+    /* z-index: 1; */
     width: 50px;
     transition: 0.5s;
     overflow-x: hidden;
-
     background-color: #111;
     background-color: #505050;
     
@@ -132,27 +120,51 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
-#sidebar a:hover {
-    color: #f1f1f1;
+#tout-sauf-header {
+    border: 1px solid #3700ff ;
+    /* position: relative; */
+    /* display: flex; */
+    /* flex: 1; */
+    /* height: 100%; */
+    /* flex: 1; */
+    /* display: inline; */
 }
-
 
 main {
     padding-left: 1em;
-    /* flex: 1; */
 }
 
 .container {
     display: flex;
 }
 
-.sidebar-content {
-    border: 3px solid #16cabb ;
+#sidebar a:hover {
+    color: #f1f1f1;
 }
 
-#tout-sauf-header {
-    border: 1px solid #3700ff ;
+
+.sidebar-content {
+    /* position: fixed; */
+    /* top: 50px; */
+    border: 3px solid #16cabb ;
+    /* flex: 1; */
+    /* height: 1000px; */
+    
 }
+
+nav {
+    position: sticky;
+    top: 0px;
+    padding: 0.5em;
+    background-color: #505050;
+    align-items: center;
+    /* z-index: 9999; */
+    /* display: flex; */
+    /* width: 100%; */
+    /* margin: 0; */
+    /* z-index: 1000;  */
+}
+
 
 
 /* --------------------------------------------------------------------- */
