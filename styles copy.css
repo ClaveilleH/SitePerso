@@ -23,13 +23,18 @@ header, footer{
     /* Couleur légèrement différente pour le header et le footer */
     padding: 1em;
     text-align: center;
+    flex: 1;
+}
+
+footer {
+    background-color: blueviolet;
 }
 
 header {
     display: flex;
     flex-direction: line;
     align-items: center;
-    background-color: #ff0000; 
+    background-color: #7e1212; 
     /* Couleur légèrement différente pour le header et le footer */
     padding: 0em;
     text-align: center;
@@ -123,24 +128,19 @@ nav ul li a:hover {
 }
 
 #sidebar {
-
-    /* height:   100%;  */
+    height: 100%; 
     position: sticky;
-     top: 50px; 
-    /*Positionner la sidebar sous le header */
+    top: 50px; /* Positionner la sidebar sous le header */
     /* height: calc(100% - 100px);  */
     /* Ajuster la hauteur pour exclure la hauteur du header */
     width: 50px;
     /* background-color: #111; */
-    background-color: #00ff40;
-    /* z-index: 1; */
-    /* left: 0; */
-    /* bottom: 0; */
+    background-color: #0c7426;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
     /* overflow-x: hidden; */
-    /* transition: 0.5s; */
-
-    border: 3px solid #ff00b3 ;
-
+    transition: 0.5s;
 }
 
 .sidebar-content {
@@ -165,26 +165,18 @@ nav ul li a:hover {
     color: #f1f1f1;
 }
 
-.sidebar-content .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
 main {
-    /* padding-left: 1em; */
-    /* margin-left: 0px; */
-    /* margin-top: 50px; */
-    /* transition: margin-left 0.5s; */
+    padding-left: 0em;
+    height: 100%;
+    /* margin-left: 50px;
+    margin-top: 50px;
+    transition: margin-left 0.5s; */
     /* flex : 1; */
-    border: 3px solid #ffffff ;
-    /* overflow-x: hidden; */
+    /* overflow-y: auto; */
 }
 
 .test {
+    height: 100%;
     display: flex;
-    border: 3px solid #5eff00 ;
-    /* width: 50px; */
+    background-color: rgb(2, 90, 61);
 }

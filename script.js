@@ -8,6 +8,7 @@ var animation = lottie.loadAnimation({
 
 // Ajouter des événements de souris
 var lottieLogo = document.getElementById('lottie-logo');
+var main = document.getElementsByTagName('main')[0];
 var isCross = false; // Variable pour suivre l'état actuel
 
 lottieLogo.addEventListener('click', function () {
@@ -17,13 +18,6 @@ lottieLogo.addEventListener('click', function () {
         isCross = false;
     } else {
         animation.goToAndPlay(0, true); // Jouer l'animation à partir de la première image
-        // var onEnterFrame = function (event) {
-        //     if (event.currentTime >= animation.totalFrames / 2) {
-        //         animation.removeEventListener('enterFrame', onEnterFrame);
-        //         animation.goToAndStop(animation.totalFrames / 2, true);
-        //     }
-        // };
-        // animation.addEventListener('enterFrame', onEnterFrame);
         animation.addEventListener("enterFrame", function () {
             if (animation.currentFrame >= animation.totalFrames / 2) {
                 animation.removeEventListener("enterFrame");
@@ -38,8 +32,10 @@ lottieLogo.addEventListener('click', function () {
 
 function openSideBar() {
     document.getElementById("sidebar").style.width = "250px";
+    // main.style.marginLeft = "250px";
 }
 
 function closeSideBar() {
     document.getElementById("sidebar").style.width = "50px";
+    // main.style.marginLeft = "50px";
 }
