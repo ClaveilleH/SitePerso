@@ -1,21 +1,26 @@
 html, body {
     height: 100%;
+    min-height: 100vh;
     margin: 0;
+    overflow: auto;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    
+    height: 100vh;
     background-color: #1e1e1e; /* Couleur de fond par défaut de VS Code */
     color: #ffffff; /* Couleur du texte pour un bon contraste */
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
+    /* flex: 1; */
+
 }
 
 main {
     flex: 1;
+    /* overflow: auto; */
 }
 
 header, footer{
@@ -29,7 +34,6 @@ header {
     display: flex;
     flex-direction: line;
     align-items: center;
-    background-color: #ff0000; 
     /* Couleur légèrement différente pour le header et le footer */
     padding: 0em;
     text-align: center;
@@ -123,36 +127,42 @@ nav ul li a:hover {
 }
 
 #sidebar {
-
-    /* height:   100%;  */
     position: sticky;
-     top: 50px; 
+    top: 50px; 
+    z-index: 1;
+    height:   100vh; 
+    /* height: calc(100vh - 100px); marche pas c'est nul */
+
+    /* flex: 1; */
+    width: 50px;
+    transition: 0.5s;
+    overflow-x: hidden;
+    
+    
     /*Positionner la sidebar sous le header */
     /* height: calc(100% - 100px);  */
     /* Ajuster la hauteur pour exclure la hauteur du header */
-    width: 50px;
-    /* background-color: #111; */
-    background-color: #00ff40;
+    background-color: #111;
+    background-color: #505050;
     /* z-index: 1; */
     /* left: 0; */
     /* bottom: 0; */
-    /* overflow-x: hidden; */
-    /* transition: 0.5s; */
+    
 
-    border: 3px solid #ff00b3 ;
+    /* height: 100%; 
+    width: 250px;
+    position: sticky;
+    top: 0; 
+    background-color: #00ff40;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s; 
+    padding-top: 60px; 
+    border: 3px solid #ff00b3; */
 
 }
 
-.sidebar-content {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */ 
-    height: 100%; 
-    overflow: hidden;
-}
-
-.sidebar-content a {
+#sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -161,30 +171,75 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
-.sidebar-content a:hover {
+#sidebar a:hover {
     color: #f1f1f1;
 }
 
-.sidebar-content .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
 
 main {
-    /* padding-left: 1em; */
+    padding-left: 1em;
     /* margin-left: 0px; */
     /* margin-top: 50px; */
     /* transition: margin-left 0.5s; */
     /* flex : 1; */
-    border: 3px solid #ffffff ;
     /* overflow-x: hidden; */
 }
 
 .test {
     display: flex;
-    border: 3px solid #5eff00 ;
     /* width: 50px; */
+
+
+    /* height: 100%; */
 }
+
+.sidebar-content {
+    border: 3px solid #16cabb ;
+    /* flex: 1; */
+    /* height: 1000px; */
+
+}
+
+#tout-sauf-header {
+    border: 2px solid #3700ff ;
+    /* position: relative; */
+    /* display: flex; */
+    /* flex: 1; */
+    /* height: 100%; */
+    /* flex: 1; */
+    /* display: inline; */
+}
+
+
+/* --------------------------------------------------------------------- */
+
+header {
+    background-color: #ff0000; 
+}
+
+#sidebar {
+
+    border: 2px solid #ff00b3 ;
+    /* background-color: #00ff40; */
+}
+
+.test {
+    border: 3px solid #5eff00 ;
+    /* background-color: aquamarine; */
+}
+
+main {
+    border: 3px solid #ffffff ;
+
+}
+
+body {
+    border: 2px solid #ff00b3 ;
+
+}
+
+/* html {
+    border: 3px solid #09a509 ;
+
+} */
+

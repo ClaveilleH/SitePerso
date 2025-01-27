@@ -39,3 +39,4 @@ function closeSideBar() {
     document.getElementById("sidebar").style.width = "50px";
     // main.style.marginLeft = "50px";
 }
+

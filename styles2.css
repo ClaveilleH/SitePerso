@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+html {
+    border: 10px solid #09a509 ;
+
+}
+
+#redirect-menu-icon, #lottie-logo {
+    width: 30px;
+    height: 30px;
+    /* margin-right: 0.7em; */
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 1em;
+}
+
+#tout-sauf-header {
+    border: 2px solid #3700ff ;
+    height: 100%;
+    flex: 1;
+    /* display: inline; */
+}
+
+
+header {
+    background-color: #ff0000; 
+}
+
+#sidebar {
+
+    border: 2px solid #ff00b3 ;
+    /* background-color: #00ff40; */
+}
+
+.test {
+    border: 3px solid #5eff00 ;
+    /* background-color: aquamarine; */
+}
+
+main {
+    border: 3px solid #ffffff ;
+
+}
+
+body {
+    border: 2px solid #ff00b3 ;
+
+}
+
+html {
+    border: 3px solid #09a509 ;
+
+}
