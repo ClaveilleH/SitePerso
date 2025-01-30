@@ -37,10 +37,6 @@ nav {
     padding: 0.5em;
     background-color: #505050;
     align-items: center;
-    /* display: flex; */
-    /* width: 100%; */
-    /* margin: 0; */
-    /* z-index: 1000;  */
 }
 
 .nav-content {
@@ -113,9 +109,8 @@ nav ul li a:hover {
 #sidebar {
     position: sticky;
     top: 50px;
-    /* height: 100vh; */
+    /* height: 50vh; */
     /* If the height is fixed the sticky is working */
-    height: auto;
     max-height: fit-content;
     width: 50px;
     transition: 0.5s;
