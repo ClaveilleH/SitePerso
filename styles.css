@@ -113,10 +113,12 @@ nav ul li a:hover {
 #sidebar {
     position: sticky;
     top: 50px;
-    height: 100vh;
+    /* height: 100vh; */
+    /* If the height is fixed the sticky is working */
+    height: auto;
+    max-height: fit-content;
     width: 50px;
     transition: 0.5s;
-    overflow-x: hidden;
 
     background-color: #111;
     background-color: #505050;
@@ -156,6 +158,11 @@ main {
 
 
 /* --------------------------------------------------------------------- */
+
+#sidebar-container {
+    border: 2px solid #ffd500 ;
+    background-color: #505050;
+}
 
 header {
     /* background-color: #ff0000;  */
