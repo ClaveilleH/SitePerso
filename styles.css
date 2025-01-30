@@ -112,24 +112,29 @@ nav ul li a:hover {
 
 #sidebar {
     position: sticky;
-    top: 50px;
-    height: 100vh;
+    top: 60px; /* Adjust based on your nav height */
+    /* Remove the fixed height */
+    max-height: calc(100vh - 165px); /* Subtract nav height + some padding */
     width: 50px;
     transition: 0.5s;
     overflow-x: hidden;
-
-    background-color: #111;
+    overflow-y: auto; /* Add scrolling if content is too tall */
     background-color: #505050;
-    
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add some space between items */
+    padding: 10px 0; /* Add some padding top and bottom */
 }
 
 #sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px; /* Reduced from 25px to fit better */
     color: #818181;
     display: block;
     transition: 0.3s;
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 #sidebar a:hover {
