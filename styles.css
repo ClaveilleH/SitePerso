@@ -117,12 +117,26 @@ nav ul li a:hover {
     
 }
 
+#sidebar img {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    /* margin: 0.5em; */
+    border: 1px solid #c416ca ;
+}
+
 #sidebar a {
-    padding: 8px 8px 8px 32px;
+    border: 1px solid #16cabb ;
+    /* padding: 8px 8px 8px 32px; */
+    display: flex;
+    flex-direction: line;
+    align-items: center;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
-    display: block;
+    overflow: hidden;
+    /* display: block; */
     transition: 0.3s;
 }
 
@@ -133,6 +147,7 @@ nav ul li a:hover {
 
 main {
     padding-left: 1em;
+    width: 100%;
     /* flex: 1; */
 }
 
@@ -149,6 +164,11 @@ main {
     border: 1px solid #3700ff ;
 }
 
+
+main h1 {
+    /* color: ; */
+    text-align: center;
+}
 
 /* --------------------------------------------------------------------- */
 
