@@ -109,7 +109,7 @@ nav ul li a:hover {
 #sidebar {
     position: sticky;
     top: 50px;
-    /* height: 50vh; */
+    /* height: 100vh; */
     /* If the height is fixed the sticky is working */
     width: 50px;
     transition: 0.5s;
