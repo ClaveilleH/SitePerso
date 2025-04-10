@@ -1,5 +1,8 @@
 window.onload = function () {
 
+    var footer = document.querySelector("footer");
+    var sidebar = document.getElementById("sidebar");
+
     var animation = lottie.loadAnimation({
         container: document.getElementById('lottie-logo'), // ID du conteneur où l'animation sera rendue
         renderer: 'svg',
@@ -10,7 +13,6 @@ window.onload = function () {
 
     // Ajouter des événements de souris
     var lottieLogo = document.getElementById('lottie-logo');
-    var main = document.getElementsByTagName('main')[0];
     var isCross = false; // Variable pour suivre l'état actuel
 
     lottieLogo.addEventListener('click', function () {
@@ -32,13 +34,33 @@ window.onload = function () {
     });
 
     function openSideBar() {
-        document.getElementById("sidebar").style.width = "250px";
+        sidebar.style.width = "250px";
         // main.style.marginLeft = "250px";
     }
 
     function closeSideBar() {
-        document.getElementById("sidebar").style.width = "50px";
+        sidebar.style.width = "50px";
         // main.style.marginLeft = "50px";
     }
+
+    function getFooterDistance() {
+        var rect = footer.getBoundingClientRect();
+        // console.log("Distance entre le footer et le haut de l'écran : " + rect.top + "px");
+        return rect.top; // Distance entre le haut de l'écran et le footer
+    }
+
+    // Appeler la fonction au chargement de la page
+    // getFooterDistance();
+
+    function updateSidebarHeight() {
+        var dist = getFooterDistance();
+        sidebar.style.height = (dist-100) + "px";
+        // console.log("Sidebar height updated to: " + sidebarHeight + "px");
+    }
+
+    window.addEventListener("scroll", function () {
+        // updateSidebarHeight();
+    });
+
 
 }

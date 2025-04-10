@@ -31,12 +31,21 @@ header {
     margin-bottom: 0em;
 }
 
+#logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 1em;
+}
+
 nav {
+    height: 50px;
     position: sticky;
     top: 0px;
-    padding: 0.5em;
+    /* padding: 0.5em; */
     background-color: #505050;
     align-items: center;
+    
+
 }
 
 .nav-content {
@@ -44,16 +53,39 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    height: 100%;
+
+    /* border-radius: 5px; */
+}
+
+.nav-list {
+    display: flex;
+    margin: 0 0 0 calc(50px - 0.5em - 30px);
+    list-style-type: none;
+    justify-content: flex-start;
+    flex: 1;
+    padding: 0;
 }
 
 
-.nav-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex: 1;
+.nav-list li {
+    margin: 0 0.3em;
+    padding: 0.2em;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #a3a3a3; /* Couleur du texte */
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-list li a:hover {
+    color: #f1f1f1; /* Couleur du texte au survol */
+}
+
+.nav-list li:hover {
+    transform: scale(1.03); /* Agrandit légèrement le carré au survol */
 }
 
 .nav-images {
@@ -65,13 +97,20 @@ nav {
     margin-right: 0.7em;
 }
 
+#lottie-logo {
+    /* width: 30px;
+    height: 30px;*/
+    margin-left: 0.5em; 
+    cursor: pointer;
+}
+
 
 h1{
     text-align: left;
     margin: 0;    
 }
 
-
+/* 
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -89,17 +128,7 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-#logo {
-    width: 80px;
-    height: 80px;
-    margin-right: 1em;
-}
+} */
 
 #redirect-menu-icon, #lottie-logo {
     width: 30px;
@@ -109,7 +138,7 @@ nav ul li a:hover {
 #sidebar {
     position: sticky;
     top: 50px;
-    /* height: 100vh; */
+    height: 100vh;
     /* If the height is fixed the sticky is working */
     width: 50px;
     transition: 0.5s;
@@ -123,11 +152,9 @@ nav ul li a:hover {
     padding: 0;
     margin: 0;
     /* margin: 0.5em; */
-    border: 1px solid #c416ca ;
 }
 
 #sidebar a {
-    border: 1px solid #16cabb ;
     /* padding: 8px 8px 8px 32px; */
     display: flex;
     flex-direction: line;
@@ -138,6 +165,7 @@ nav ul li a:hover {
     overflow: hidden;
     /* display: block; */
     transition: 0.3s;
+    white-space: nowrap; /* empeche le retour a la ligne*/
 }
 
 #sidebar a:hover {
@@ -156,13 +184,6 @@ main {
     display: flex;
 }
 
-.sidebar-content {
-    border: 3px solid #16cabb ;
-}
-
-#tout-sauf-header {
-    border: 1px solid #3700ff ;
-}
 
 
 main h1 {
@@ -171,38 +192,3 @@ main h1 {
 }
 
 /* --------------------------------------------------------------------- */
-
-#sidebar-container {
-    border: 2px solid #ffd500 ;
-    background-color: #505050;
-}
-
-header {
-    /* background-color: #ff0000;  */
-}
-
-#sidebar {
-
-    border: 2px solid #ff00b3 ;
-    /* background-color: #00ff40; */
-}
-
-.container {
-    border: 1px solid #5eff00 ;
-    /* background-color: aquamarine; */
-}
-
-main {
-    border: 1px solid #ffffff ;
-
-}
-
-body {
-    border: 2px solid #ff00b3 ;
-
-}
-
-html {
-    border: 3px solid #09a509 ;
-
-}

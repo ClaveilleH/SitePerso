@@ -1,0 +1,71 @@
+
+.sidebar-content {
+    border: 3px solid #16cabb ;
+}
+
+#tout-sauf-header {
+    border: 1px solid #3700ff ;
+}
+
+#sidebar-container {
+    border: 2px solid #ffd500 ;
+    background-color: #505050;
+}
+
+header {
+    /* background-color: #ff0000;  */
+}
+
+#sidebar {
+
+    border: 2px solid #ff00b3 ;
+    /* background-color: #00ff40; */
+}
+
+.container {
+    border: 1px solid #5eff00 ;
+    /* background-color: aquamarine; */
+}
+
+main {
+    border: 1px solid #ffffff ;
+
+}
+
+body {
+    border: 2px solid #ff00b3 ;
+
+}
+
+html {
+    border: 3px solid #09a509 ;
+
+}
+
+
+#lottie-logo {
+    border: 1px solid #ff00b3 ;
+    /* background-color: #00ff40; */
+}
+
+#nav-list-container {
+    /* border: 1px solid #ff00b3 ; */
+    /* background-color: #00ff40; */
+}
+
+.nav-list {
+    border: #09a509 1px solid;
+}
+
+#sidebar img {
+    border: 1px solid #c416ca ;
+}
+
+.nav-content {
+    border: #f1f1f1 1px solid;
+}
+
+
+#sidebar a {
+    border: 1px solid #16cabb ;
+}
