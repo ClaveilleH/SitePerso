@@ -1,55 +1,19 @@
+<?php include 'config.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hugoat</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <!-- <link rel="stylesheet" href="styles/border.css"> -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+    <link rel="stylesheet" href="<?php echo BASE_URL . $mainStylePath; ?>">
+    <link rel="icon" href="<?php echo BASE_URL . $faviconPath; ?>" type="image/x-icon">
     <script src="script.js"></script>
 </head>
 <body>
     <div id="left-bar"></div>
-
-    <header>
-        <!-- <div class="header-content"> -->
-            <a href="#navbar">
-                
-                <img id="logo" src="imgs/logo.png" alt="Logo de mon site web">
-            </a>
-            <h1>Hugo CLAVEILLE</h1>
-        <!-- </div> -->
-    </header>
-    <div id="tout-sauf-header">
-        <nav id="navbar" >
-            <div class="nav-content">
-                <a>
-                    <div id="lottie-logo" ></div>
-                </a>
-                <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="rando/">Randonées</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-
-                <div class="nav-images">
-                    <a href="https://www.instagram.com/hugo.claveille/">
-                        <img id="redirect-menu-icon" src="imgs/insta.png" alt="Vers mon compte Instagram" >
-                    </a>
-                    <a href="https://github.com/ClaveilleH">
-                        <img id="redirect-menu-icon" src="imgs/github.png" alt="Vers mon compte GitHub" >
-                    </a>
-                    <a href="https://www.linkedin.com/in/claveille/">
-                        <img id="redirect-menu-icon" src="imgs/linkedin.png" alt="Vers mon compte Linkedin" >
-                    </a>
-                    <a href="https://www.instagram.com/hugo.claveille/">
-                        <img id="redirect-menu-icon" src="imgs/youtube.png" alt="Vers mon compte Youtube" >
-                    </a>
-                </div>
-            </div>
-        </nav>
+    <?php include 'base/header.php'; ?>
+    <div id="prime-container">
+        <?php include 'base/navbar.php'; ?>
         <div class="container" >
             <div id="sidebar" class="sidebar" >
                 <a href="#home"> <img src="imgs/home.png"> Accueil </a>
@@ -120,9 +84,7 @@
 
             </main>
         </div>
-        <footer>
-            <p>&copy; 2025 Mon Site Web. Tous droits réservés.</p>
-        </footer>
     </div>
+    <?php include 'base/footer.php'; ?>
 </body>
 </html>

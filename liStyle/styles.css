@@ -6,6 +6,10 @@ body {
     color: #fff;
 }
 
+.hidden {
+    display: none;
+}
+
 ul {
     position: relative;
     transform: skewY(-15deg);
@@ -88,3 +92,5 @@ li:last-child::after {
     background-color: #fff;
     margin-top: 10px; */
 }
+
+
