@@ -1,7 +1,10 @@
 window.onload = function () {
 
+    var header = document.querySelector("header");
     var footer = document.querySelector("footer");
+    var main = document.querySelector("main");
     var sidebar = document.getElementById("sidebar");
+    var leftBar = document.getElementById("left-bar");
 
     var animation = lottie.loadAnimation({
         container: document.getElementById('lottie-logo'), // ID du conteneur où l'animation sera rendue
@@ -34,12 +37,17 @@ window.onload = function () {
     });
 
     function openSideBar() {
+        // sidebar.style.whiteSpace = "normal";
         sidebar.style.width = "250px";
-        // main.style.marginLeft = "250px";
+        leftBar.style.width = "250px"; // elle grandit trop c'est chelou
+        main.style.width = "calc(99% - 250px)"; 
     }
 
     function closeSideBar() {
         sidebar.style.width = "50px";
+        leftBar.style.width = "50px";
+        main.style.width = "100%";
+        // sidebar.style.whiteSpace = "nowrap";
         // main.style.marginLeft = "50px";
     }
 

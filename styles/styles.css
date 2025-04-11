@@ -9,12 +9,24 @@ body {
     background-color: #1e1e1e; /* Couleur de fond par défaut de VS Code */
     color: #ffffff; /* Couleur du texte pour un bon contraste */
     font-family: Arial, sans-serif;
+    /* background-color: #505050; */
 }
+
 
 header, footer{
     background-color: #252526; 
     padding: 1em;
     text-align: center;
+}
+
+footer {
+    /* background-color: #252526; 
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; */
 }
 
 header {
@@ -135,14 +147,29 @@ nav ul li a {
     height: 30px;
 }
 
+
+
+#left-bar {
+    position: fixed; /* Fixe la barre à gauche de l'écran */
+    top: 0;
+    left: 0;
+    width: 50px; /* Largeur de la barre */
+    height: 100%; /* Prend toute la hauteur de l'écran */
+    background-color: #505050; 
+    background-color: #ff0000; 
+    z-index: -1; /* Place la barre derrière le contenu */
+    transition: width 0.5s ease;
+
+}
+
 #sidebar {
     position: sticky;
     top: 50px;
-    height: 100vh;
-    /* If the height is fixed the sticky is working */
     width: 50px;
-    transition: 0.5s;
+    transition: width 0.5s ease;
     background-color: #505050;
+    /* height: 100vh; */
+    /* If the height is fixed the sticky is working */
     
 }
 
@@ -176,6 +203,7 @@ nav ul li a {
 main {
     padding-left: 1em;
     width: 100%;
+    transition: width 0.5s ease;
     /* flex: 1; */
 }
 
