@@ -1,4 +1,5 @@
 <?php include_once 'config.php'; ?>
+<script src="<?php echo BASE_URL; ?>base/navbar.js"></script>
 <nav id="navbar" >
     <div class="nav-content">
         <a>

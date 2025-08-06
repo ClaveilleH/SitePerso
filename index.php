@@ -88,3 +88,10 @@
     <?php include 'base/footer.php'; ?>
 </body>
 </html>
+
+
+<!-- 
+
+browser-sync start --proxy "http://localhost:3000" --files "./*.php, ./css/*.css, ./js/*.js"
+
+-->

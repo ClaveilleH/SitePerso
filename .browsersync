@@ -1,0 +1,5 @@
+{
+  "proxy": "http://localhost:3000",
+  "files": ["./**/*.php", "./css/*.css", "./js/*.js"],
+  "ignore": ["**/.wine/**"]
+}

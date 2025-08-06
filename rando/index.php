@@ -9,6 +9,7 @@
     <link rel="icon" href="<?php echo BASE_URL . $faviconPath; ?>" type="image/x-icon">
     <!-- <script src="../base/script.js"></script> -->
     <script src="<?php echo BASE_URL . $baseScriptPath; ?>"></script>
+    
 </head>
 <body class="hidden">
     <div id="left-bar"></div>
