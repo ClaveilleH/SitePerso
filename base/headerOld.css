@@ -1,0 +1,21 @@
+#nom {
+    text-align: center; /* Center the name */
+    flex-grow: 1; /* Allow the name to take available space */
+}
+
+#buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end; /* Align buttons to the right */
+    width: 100%; /* Ensure the container takes full width */
+    margin-left: auto; /* Push buttons to the right */
+    margin-right: 1em; /* Add some space on the right */
+}
+
+button {
+    background-color: #505050;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
