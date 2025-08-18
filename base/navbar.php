@@ -7,7 +7,7 @@
         </a>
         <ul class="nav-list">
             <li><a href="<?php echo BASE_URL;?>">Home</a></li>
-            <li><a href="#home">Projets</a></li>
+            <li><a href="<?php echo BASE_URL . "projets/"; ?>">Projets</a></li>
             <li><a href="<?php echo BASE_URL . "rando/"; ?>">Randonées</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>

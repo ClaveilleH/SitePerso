@@ -18,9 +18,11 @@
         <?php include '../base/navbar.php'; ?>
         <div class="container">
             <div id="sidebar" class="sidebar">
-                <a href="#home"> <img src="../imgs/home.png"> Accueil </a>
-                <a href="#about"> <img src="../imgs/wip.png"> À propos  </a>
-                <a href="#contact"> <img src="../imgs/wip.png"> Contact</a>
+                <a href="#home"> <img src="../imgs/wip.png"> Images </a>
+                <a href="#home"> <img src="../imgs/wip.png"> Itinéraires </a>
+                <a href="#home"> <img src="../imgs/wip.png"> Orga </a>
+                
+                
             </div>
             <main>
                 <section id="rando-list">
