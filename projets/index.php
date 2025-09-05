@@ -27,18 +27,20 @@
                     <div class="project-card" onclick="window.location.href='projet1.php'">
                         <img src="https://placehold.co/600x400" alt="image projet 1">
                         <div class="content">
-                            <h3>Mon projet PHP</h3>
-                            <div class="date">15/04/2024</div>
-                            <p class="description">Une petite description rapide de to
-                                n projet PHP.dqskjdqsjkdqskjmdqsklhdbqshldgqsohgdqshgsssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p>
+                            <h3>Site perso</h3>
+                            <div class="date">date</div>
+                            <p class="description">Site personnel afin de faire un portfolio et de simplifier l'organisation des activitées avec mes proches</p>
                         </div>
                     </div>
                     <div class="project-card" onclick="window.location.href='projet1.php'">
                         <img src="https://placehold.co/600x400" alt="image projet 1">
                         <div class="content">
-                            <h3>Mon projet PHP 2 </h3>
-                            <div class="date">15/04/2024</div>
-                            <p class="description" >Une petite description rapide de ton projet PHP.</p>
+                            <h3>Compilateur MiniC vers DOT</h3>
+                            <div class="date">2025</div>
+                            <p class="description" >Compilateur d'un sous langage de C (MiniC) vers un graphe DOT.
+                                Réalisé en C avec lex et yacc.
+                                Projet académique réalisé en groupe de 2.
+                            </p>
                         </div>
                     </div>
                     <div class="project-card" onclick="window.location.href='projet2.php'">

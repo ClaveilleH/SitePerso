@@ -9,6 +9,8 @@
             <li><a href="<?php echo BASE_URL;?>">Home</a></li>
             <li><a href="<?php echo BASE_URL . "projets/"; ?>">Projets</a></li>
             <li><a href="<?php echo BASE_URL . "rando/"; ?>">Randonées</a></li>
+            <li><a href="<?php echo BASE_URL . "activites/"; ?>">Activitées</a></li>
+            <li><a href="<?php echo BASE_URL . "activites/"; ?>">Citations&</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 

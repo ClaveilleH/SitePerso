@@ -62,6 +62,9 @@
 }
 
 .project-card p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
+  word-break: break-word;
+  white-space: pre-line;
+  margin-right: 15px;
 }
