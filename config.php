@@ -1,7 +1,7 @@
 <?php
 
 define('ROOT', dirname(__FILE__));
-define('BASE_URL', 'http://localhost:3000/');
+define('BASE_URL', 'http://claveille.fr/');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'hugo');         // ⚠ mets TON user MySQL ici
 define('DB_PASSWORD', '8556933aa');  // ⚠ mot de passe MySQL
