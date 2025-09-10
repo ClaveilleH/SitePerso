@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       messageBox.className = "";
 
       const formData = new FormData(form);
-      const response = await fetch("login.php", {
+      const response = await fetch("/login.php", {
         method: "POST",
         body: formData
       });

@@ -25,7 +25,7 @@
             <main>
                 <div id="aa" class="project-grid">
                     <div class="project-card" onclick="window.location.href='projet1.php'">
-                        <img src="https://placehold.co/600x400" alt="image projet 1">
+                        <img src="/imgs//projets/projSite.json" alt="image projet 1">
                         <div class="content">
                             <h3>Site perso</h3>
                             <div class="date">date</div>

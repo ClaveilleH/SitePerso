@@ -19,7 +19,7 @@ $loginPath  = '/base/login.php';
 
 $loginScriptPath = '/js/login.js';
 
-$baseScriptPath = '/base/script.js';
+$baseScriptPath = 'script.js';
 
 
 // <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script> -->
