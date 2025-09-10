@@ -1,8 +1,20 @@
-<?php session_start(); ?>
-<?php include '../config.php'; ?>
+<?php session_start(); 
+include '../config.php'; 
+
+function isMobile() {
+    return preg_match('/(android|iphone|ipad|ipod|mobile)/i', $_SERVER['HTTP_USER_AGENT']);
+}
+
+if (isMobile()) {
+    header('Location: ' . BASE_URL . 'mobile.php');
+    exit;
+}
+
+?>
 <link rel="stylesheet" href="/styles/header.css">
 <link rel="stylesheet" href="/styles/login.css">
 <header>
+    
     <a href="<?php echo BASE_URL; ?>">
         <img id="logo" src="<?php echo $logoPath; ?>" alt="Logo de mon site web">
     </a>
