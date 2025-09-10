@@ -5,10 +5,11 @@ session_start();
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site non compatible mobile</title>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site non compatible mobile</title>
+    <link rel="icon" href="<?php echo BASE_URL . $faviconPath; ?>" type="image/x-icon">
+    <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
@@ -34,6 +35,7 @@ session_start();
     <p>Merci de revenir depuis un ordinateur 💻</p>
     <p>Ce site n’est pas adapté aux mobiles ou tablettes.</p> 
     <p> J'ai une vie.</p>
+    <!-- <button onclick="window.location.href='<?php echo BASE_URL; ?>'">Y aller quand même</button> -->
   </div>
 </body>
 </html>
